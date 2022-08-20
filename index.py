@@ -8,7 +8,7 @@ An app that takes chess data and perform analysis into it.
 """
 # --------------------------- side bar ---------------------------------------
 st.sidebar.markdown(""" ## Data input """)
-st.cache(suppress_st_warning=True)
+@st.cache(suppress_st_warning=True)
 def load_data():
     return st.sidebar.file_uploader("File",type=["csv"])
 file = load_data()
